@@ -90,6 +90,8 @@ display: flex;
 flex-wrap: wrap;
 gap: 10px;
 justify-content: center;
+max-width: 60%;
+margin:10px auto;
 }
 
 .container img {
@@ -98,6 +100,10 @@ aspect-ratio: 16/9;
 display: block;
 width: 600px;
 border: 10px solid #56202E;
+}
+.container img:nth-of-type(1){
+ width:100%;
+ justify-content: center;
 }
 .container img:hover {
 box-shadow: 0 5px 15px rgba(0,0,0,0.5);
@@ -142,4 +148,15 @@ footer ul {
     list-style: none;
     text-decoration: underline;
     text-decoration-thickness: 5%;
+}
+@media screen and (max-width: 992px) {
+    .mini-container {
+      font-size: 200%;
+    }
+  }
+
+@media screen and (max-width: 576px) {
+    .mini-container {
+       font-size: 100%; 
+}
 }
